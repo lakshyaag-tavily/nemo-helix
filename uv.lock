@@ -48,6 +48,7 @@ members = [
     "nemo-safe-synthesizer-plugin",
     "nemo-sandboxed-gym",
     "nemo-switchyard-plugin",
+    "nemo-tavily-plugin",
     "nemo-unsloth-plugin",
     "nemohelix",
     "nhx-auth",
@@ -7435,6 +7436,25 @@ requires-dist = [
     { name = "nemo-helix-plugin", editable = "packages/nemo_helix_plugin" },
     { name = "nemo-switchyard", specifier = "==0.3.0" },
     { name = "pyyaml", specifier = ">=6.0.2" },
+]
+
+[[package]]
+name = "nemo-tavily-plugin"
+version = "0.1.0"
+source = { editable = "plugins/nemo-tavily" }
+dependencies = [
+    { name = "httpx" },
+    { name = "nemo-helix" },
+    { name = "nemo-helix-plugin" },
+    { name = "pydantic" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "httpx", specifier = ">=0.27.0,<1" },
+    { name = "nemo-helix", editable = "packages/nemo_helix" },
+    { name = "nemo-helix-plugin", editable = "packages/nemo_helix_plugin" },
+    { name = "pydantic", specifier = ">=2.0.0" },
 ]
 
 [[package]]

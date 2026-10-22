@@ -530,6 +530,7 @@ members = [
   "plugins/nemo-unsloth",
   "plugins/nemo-rl",
   "plugins/nemo-builder",
+  "plugins/nemo-tavily",
   "services/automodel",
   "services/unsloth",
   "services/rl",
